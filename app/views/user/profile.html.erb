@@ -1,0 +1,14 @@
+<h1>User#profile</h1>
+<p>Find me in app/views/user/profile.html.erb</p>
+
+<%= @user.email %>
+
+<% if @self == false %>
+<%= link_to "follow", follow_user_path(@user), method: "post" ,remote: :true %>
+<% end %>
+
+<h3>Badges</h3>
+<% @user.badges.each do |b| %>
+<%= b.name %>
+<i><%= b.description %></i>
+<% end %>
