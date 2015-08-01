@@ -9,6 +9,8 @@
   <strong>User:</strong>
   <%= @post.user_id %>
 </p>
+<%= @post.action.activity.name %>
+<%= @post.action.entity.name %>
 
 <% @post.comments.recent.limit(10).all.each do  |c| %>
 <%= c.comment%> <%= c.user.email %><br>

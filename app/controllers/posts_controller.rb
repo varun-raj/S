@@ -88,6 +88,6 @@ Post
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:description,:attachment,:comment)
+      params.require(:post).permit(:description,:attachment,:comment,action_attributes: [:id, :entity_id, :activity_id])
     end
 end

@@ -19,6 +19,8 @@ gem 'devise'
 gem "socialization"
 # Comments Module
 gem 'acts_as_commentable'
+# Nested Form
+gem "nested_form"
 # Reputation Badges
 gem 'merit'
 # Carrierwave for fileuploads
